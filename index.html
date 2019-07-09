@@ -56,6 +56,9 @@
 			width: 100%;
 			padding-left: 5px;
 		}
+		.input:hover {
+			border-color: #aaa;
+		}
 		.input.icon {
 			background-size: 20px 20px;
 			background-position: left 7px center;
@@ -89,7 +92,7 @@
 			right: 0;
 			top: 0;
 			opacity: 0;
-			-ms-filter: 'alpha(opacity=0)';
+			filter: 'alpha(opacity=0)';
 		}
 		.manage-state {
 			font-size: 14px;
@@ -246,10 +249,10 @@
 								<span class="input-title">自己公司办理进出口<font color="red">  *</font></span><br/>
 								<div class="input-body">
 									<div class="paddingTop">
-										<input class="radio" name="comType" id="comTypeA" value="A" type="radio"><label for="comTypeA"><span>A.是</span></label></input><br/>
+										<input class="radio" name="ownIO" id="ownIOA" value="A" type="radio"><label for="ownIOA"><span>A.是</span></label></input><br/>
 									</div>
 									<div class="paddingTop">
-										<input class="radio" name="comType" id="comTypeB" value="B" type="radio"><label for="comTypeB"><span>B.不是</span></label></input><br/>
+										<input class="radio" name="ownIO" id="ownIOB" value="B" type="radio"><label for="ownIOB"><span>B.不是</span></label></input><br/>
 									</div>
 								</div>
 						</div>
@@ -257,10 +260,10 @@
 							<span class="input-title">委托第三方代理进出口<font color="red">  *</font></span><br/>
 							<div class="input-body">
 								<div class="paddingTop">
-									<input class="radio" name="comType" id="comTypeA" value="A" type="radio"><label for="comTypeA"><span>A.是</span></label></input><br/>
+									<input class="radio" name="delegatedIO" id="delegatedIOA" value="A" type="radio"><label for="delegatedIOA"><span>A.是</span></label></input><br/>
 								</div>
 								<div class="paddingTop">
-									<input class="radio" name="comType" id="comTypeB" value="B" type="radio"><label for="comTypeB"><span>B.不是</span></label></input><br/>
+									<input class="radio" name="delegatedIO" id="delegatedIOB" value="B" type="radio"><label for="delegatedIOB"><span>B.不是</span></label></input><br/>
 								</div>
 							</div>
 						</div>
@@ -268,10 +271,10 @@
 							<span class="input-title">需要低息供应链金融服务<font color="red">  *</font></span><br/>
 							<div class="input-body">
 								<div class="paddingTop">
-									<input class="radio" name="comType" id="comTypeA" value="A" type="radio"><label for="comTypeA"><span>A.是</span></label></input><br/>
+									<input class="radio" name="needFinancialServices" id="needFinancialServicesA" value="A" type="radio"><label for="needFinancialServicesA"><span>A.是</span></label></input><br/>
 								</div>
 								<div class="paddingTop">
-									<input class="radio" name="comType" id="comTypeB" value="B" type="radio"><label for="comTypeB"><span>B.不是</span></label></input><br/>
+									<input class="radio" name="needFinancialServices" id="needFinancialServicesB" value="B" type="radio"><label for="needFinancialServicesB"><span>B.不是</span></label></input><br/>
 								</div>
 							</div>
 						</div>
