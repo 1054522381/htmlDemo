@@ -41,7 +41,7 @@
 			padding: 12px 30px;
 		}
 		.input-component {
-    	width: 100%;
+			width: 100%;
 			padding-top: 30px;
 		}
 		.input-title {
@@ -52,15 +52,16 @@
 			padding: 6px 15px;
 		}
 		.input {
-			height: 31px;
+			height: 32px;
 			width: 100%;
 			padding-left: 5px;
 		}
 		.input.icon {
-			background-size: 20px 23px;
+			background-size: 20px 20px;
 			background-position: left 7px center;
 			background-repeat: no-repeat;
 			border-style: groove;
+			padding-left:33px;
 		}
 		.input.icon-contact-person {
 			background-image: url("./icons/contactPersonIcon.png");
@@ -70,6 +71,52 @@
 		}
 		.icon-job-title {
 			background-image: url("./icons/jobTitle.png"); 
+		}
+		.icon-email {
+			background-image: url("./icons/email.png"); 
+		}
+		.icon-money {
+			background-image: url("./icons/money.png"); 
+		}
+		.icon-supply-attachment, .icon-purchase-attachment {
+			background-image: url("./icons/attachment.png"); 
+			border-style: dotted !important;
+			border-color: grey;
+		}
+		.upload {
+			position: absolute;
+			font-size: 100px;
+			right: 0;
+			top: 0;
+			opacity: 0;
+			-ms-filter: 'alpha(opacity=0)';
+		}
+		.manage-state {
+			font-size: 14px;
+			color: #666666;
+		}
+		.input-component-inner-center {
+			width: 100%;
+			padding-top: 30px;
+			text-align:center;
+		}
+		.input-component-submit {
+			width: 100%;
+			padding-top: 60px;
+			text-align: center;
+			padding-bottom: 20px;
+		}
+		.submit-button {
+			width: auto;
+			height: 30px;
+			padding-top: 7px;
+			padding-bottom: 7px;
+			padding-left: 20px;
+			padding-right: 20px;
+			font-weight: normal;
+			color: #FFFFFF;
+			background: #3B67A0;
+			font-size: 14px;
 		}
 		.paddingTop {
 			padding-top: 8px;
@@ -167,14 +214,12 @@
 									<input class="input" type="text" name="mainProduct" /><br/>
 								</div>
 						</div>	
-						
-						<div class="input-component">
+							<div class="input-component">
 								<span class="input-title">联系人<font color="red">  *</font></span><br/>
 								<div class="input-body">
 									<input class="input icon icon-contact-person" type="text" name="contactPerson" /><br/>
 								</div>
 						</div>
-
 						<div class="input-component">
 							<span class="input-title">联系电话（国内）<font color="red">  *</font></span><br/>
 							<div class="input-body">
@@ -188,9 +233,98 @@
 								<input class="input icon icon-job-title" type="text" name="jobTitle" /><br/>
 							</div>
 						</div>
+						<div class="input-component">
+							<span class="input-title">电子邮箱<font color="red">  *</font></span><br/>
+							<div class="input-body">
+								<input class="input icon icon-email" type="text" name="email" /><br/>
+							</div>
+						</div>
+						<div class="input-component">
+							<span class="manage-state">经营现状</span><br/>
+						</div>
+						<div class="input-component">
+								<span class="input-title">自己公司办理进出口<font color="red">  *</font></span><br/>
+								<div class="input-body">
+									<div class="paddingTop">
+										<input class="radio" name="comType" id="comTypeA" value="A" type="radio"><label for="comTypeA"><span>A.是</span></label></input><br/>
+									</div>
+									<div class="paddingTop">
+										<input class="radio" name="comType" id="comTypeB" value="B" type="radio"><label for="comTypeB"><span>B.不是</span></label></input><br/>
+									</div>
+								</div>
+						</div>
+						<div class="input-component">
+							<span class="input-title">委托第三方代理进出口<font color="red">  *</font></span><br/>
+							<div class="input-body">
+								<div class="paddingTop">
+									<input class="radio" name="comType" id="comTypeA" value="A" type="radio"><label for="comTypeA"><span>A.是</span></label></input><br/>
+								</div>
+								<div class="paddingTop">
+									<input class="radio" name="comType" id="comTypeB" value="B" type="radio"><label for="comTypeB"><span>B.不是</span></label></input><br/>
+								</div>
+							</div>
+						</div>
+						<div class="input-component">
+							<span class="input-title">需要低息供应链金融服务<font color="red">  *</font></span><br/>
+							<div class="input-body">
+								<div class="paddingTop">
+									<input class="radio" name="comType" id="comTypeA" value="A" type="radio"><label for="comTypeA"><span>A.是</span></label></input><br/>
+								</div>
+								<div class="paddingTop">
+									<input class="radio" name="comType" id="comTypeB" value="B" type="radio"><label for="comTypeB"><span>B.不是</span></label></input><br/>
+								</div>
+							</div>
+						</div>
+						<div class="input-component">
+							<span class="input-title">供应链金融意向需求额度</span><br/>
+							<div class="input-body">
+								<input class="input icon icon-money" type="text" name="applyNum" /><br/>
+							</div>
+						</div>
+						<div class="input-component">
+								<span class="input-title">产品供应信息（如内容多可以附件）：</span><br/>
+								<div class="input-body">
+									<input class="input" type="text" name="productMsg" /><br/>
+								</div>
+						</div>
+						<div class="input-component">
+							<span class="input-title">产品供应信息附件</span><br/>
+							<div class="input-body">
+								<input class="input icon icon-supply-attachment" type="text" readonly="true" id="supplyAttachment" placeholder="上传文件（需小于500M）" /><br/>
+								<input class="upload" id="supplyAttachmentUpload" type="file"/>
+							</div>
+						</div>						
+						<div class="input-component">
+								<span class="input-title">产品采购需求（如内容多可以附件）：</span><br/>
+								<div class="input-body">
+									<input class="input" type="text" name="productDemand" /><br/>
+								</div>
+						</div>	
+						<div class="input-component">
+							<span class="input-title">产品采购需求附件</span><br/>
+							<div class="input-body">
+								<input class="input icon icon-purchase-attachment" type="text" readonly="true" id="purchaseAttachment" placeholder="上传文件（需小于500M）" /><br/>
+								<input class="upload" id="purchaseAttachmentUpload" type="file"/>
+							</div>
+						</div>
+						<div class="input-component-inner-center">
+							<span class="manage-state">请在2019年7月15日之前填好并提交以上资料。</span><br/>
+						</div>	
+						<div class="input-component-submit">
+							<a class="submit-button">提交</a>
+						</div>
+						
 					</div>
 			</div>
 		</div>
 	</form>
+	<script type="text/javascript">
+		document.getElementById("supplyAttachment").onclick = function(){
+			document.getElementById('supplyAttachmentUpload').click();
+		}
+		document.getElementById("purchaseAttachment").onclick = function(){
+			document.getElementById('purchaseAttachmentUpload').click();
+		}
+	</script>
 </body>
 </html>
