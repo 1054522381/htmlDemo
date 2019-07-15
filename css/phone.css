@@ -139,14 +139,14 @@ form {
 }
 input.radio:checked+label:after {
   position: absolute;
-  border: 4px solid #0099d6;
+  border: 5px solid #0099d6;
   content: "";
   display: inline-block;
   border-radius: 50%;
-  width: 18px;
-  height: 18px;
-  left: 53px;
-  margin-top: 7px;
+  width: 9px;
+  height: 9px;
+  left: 56px;
+  margin-top: 11px;
   box-sizing: border-box;
 }
 .radio+label span {
