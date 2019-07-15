@@ -1,0 +1,148 @@
+body {
+  background-color: rgb(237, 240, 248);
+  width: 100%;
+  height: 100%;
+  color: #000;
+  margin: 0;
+  word-break: break-word;
+  word-wrap: break-word;
+  font-size: 1.4rem;
+  font-family: "Helvetica Neue",Helvetica,"Nimbus Sans L",-apple-system,BlinkMacSystemFont,"Liberation Sans","Hiragino Sans GB","Microsoft YaHei","Microsoft JhengHei","Source Han Sans CN","Source Han Sans SC","Wenquanyi Micro Hei","WenQuanYi Zen Hei","ST Heiti",SimSun,"WenQuanYi Zen Hei Sharp",sans-serif;
+}
+form {
+  margin-top: 0em;
+}
+.wrapper {
+  padding: 20px 10px;
+}
+.header {
+  background-color: rgb(59, 103, 160);
+  background-repeat: repeat-x;
+  padding: 15px 20px;
+  color: #fff;
+  margin:auto;
+  height: auto;
+  min-height: 33px;
+  background-image: url(http://pcdn.mikecrm.com/images/formTemplate/header_bg_duRuo.png);
+  background-position: center 100%;
+  text-align: center;
+  font-weight: 700;
+}
+.body {
+  background-color: rgb(253, 253, 254);
+  min-height: 70px;
+  border-top: 0 none;
+  padding: 12px 30px;
+}
+.input-component {
+  width: 100%;
+  padding-top: 30px;
+}
+.input-title {
+  font-size: 16px;
+  color: #000;
+}
+.input-body {
+  padding: 6px 15px;
+}
+.input {
+  height: 32px;
+  width: 100%;
+  padding-left: 5px;
+}
+.input:hover {
+  border-color: #aaa;
+}
+.input.icon {
+  background-size: 20px 20px;
+  background-position: left 7px center;
+  background-repeat: no-repeat;
+  border-style: groove;
+  padding-left:33px;
+}
+.input.icon-contact-person {
+  background-image: url("../icons/contactPersonIcon.png");
+}
+.input.icon-contact-phone {
+  background-image: url("../icons/contactPhoneIcon.png"); 
+}
+.icon-job-title {
+  background-image: url("../icons/jobTitle.png"); 
+}
+.icon-email {
+  background-image: url("../icons/email.png"); 
+}
+.icon-money {
+  background-image: url("../icons/money.png"); 
+}
+.icon-supply-attachment, .icon-purchase-attachment {
+  background-image: url("../icons/attachment.png"); 
+  border-style: dotted !important;
+  border-color: grey;
+}
+.upload {
+  position: absolute;
+  font-size: 100px;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  filter: 'alpha(opacity=0)';
+}
+.manage-state {
+  font-size: 14px;
+  color: #666666;
+}
+.input-component-inner-center {
+  width: 100%;
+  padding-top: 30px;
+  text-align:center;
+}
+.input-component-submit {
+  width: 100%;
+  padding-top: 60px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.submit-button {
+  width: auto;
+  height: 30px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: normal;
+  color: #FFFFFF;
+  background: #3B67A0;
+  font-size: 14px;
+}
+.paddingTop {
+  padding-top: 8px;
+}
+.radio {
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 100%;
+  display: inline-block;
+  height: 16px;
+  margin-right: 10px;
+  margin-top: -1px;
+  vertical-align: middle;
+  width: 16px;
+  line-height: 1
+}
+.main {
+  position: relative;
+  width: 800px;
+  z-index: 20;
+  margin-left: auto;
+  margin-right: auto;
+}
+.note {
+  text-align: left;
+  color: #666;
+  white-space: pre-wrap;
+}
+span {
+  word-break: initial;
+  font-size: 1rem;
+}
